@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  font-family: "Open Sans", sans-serif;
+  outline: 0;
+  user-select: none;
+}
+
+body {
+  background: #423b88;
+  color: #f1f6fa;
+}
+
+#nav {
+  background: #423b88;
+}
+
+#nav ul {
+  list-style: none;
+}
+
+#nav ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+#nav ul li a {
+  color: #f1f6fa;
+  text-decoration: none;
+}
+
+#nav ul li a:hover {
+  color: #e85889;
+}
+
+#nav ul li #plans {
+  background: #565194;
+  border-radius: 0.3em;
+  padding: 0.5em 1em;
+}
+
+.moto {
+  margin-top: 6em;
+}
+
+.login {
+  padding: 3em 10em;
+  background: url("../images/form-img.jpg"), #423b88;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 2em;
+  box-shadow: 5px 5px 50px black;
+}
+
+.login input {
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #e85889;
+  color: #f1f6fa;
+  outline: 0 !important;
+}
+
+.login input:focus {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #e85889;
+  color: #f1f6fa;
+  outline: 0 !important;
+}
+
+.login .form-check {
+  padding-left: 0;
+  color: #c2c2c2;
+}
+
+.login button {
+  color: #f1f6fa;
+  background: #e85889;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: none;
+}
+
+.login button:hover {
+  background: #f393b4;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

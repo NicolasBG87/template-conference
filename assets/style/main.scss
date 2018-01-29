@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$primary-font: 'Open Sans', sans-serif;
+
+
+$purple: #423b88;
+$purple-light: #565194;
+$pink: #e85889;
+$pink-light: #f393b4;
+$grey: #f1f6fa;
+$green: #5fcc7b;
+$blue: #28b6f8;
+$silver: #c2c2c2;
+
+
+* {
+  font-family: $primary-font;
+  outline: 0;
+  user-select: none;
+}
+
+body {
+  background: $purple;
+  color: $grey;
+}
+
+#nav {
+  background: $purple;
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+      margin-right: 1em;
+      a {
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+          color: $pink;
+        }
+      }
+      #plans {
+        background: $purple-light;
+        border-radius: 0.3em;
+        padding: 0.5em 1em;
+      }
+    }
+  }
+}
+
+.moto {
+  margin-top: 6em;
+}
+
+.login {
+  padding: 3em 10em;
+  background: url("../images/form-img.jpg"), $purple;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  border-radius: 2em;
+  box-shadow: 5px 5px 50px black;
+  input {
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid $pink;
+    color: $grey;
+    outline: 0 !important;
+    &:focus {
+      background: none;
+      border: none;
+      border-bottom: 3px solid $pink;
+      color: $grey;
+      outline: 0 !important;
+    }
+  }
+  .form-check {
+    padding-left: 0;
+    color: $silver;
+  }
+  button {
+    color: $grey;
+    background: $pink;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    &:hover {
+      background: $pink-light;
+      cursor: pointer;
+    }
+  }
+}
