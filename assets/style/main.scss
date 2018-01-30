@@ -8,7 +8,9 @@ $pink: #e85889;
 $pink-light: #f393b4;
 $grey: #f1f6fa;
 $green: #5fcc7b;
+$green-light: #a3e0b3;
 $blue: #28b6f8;
+$blue-bg: #f1f6fa;
 $silver: #c2c2c2;
 
 
@@ -25,8 +27,15 @@ body {
 
 #nav {
   background: $purple;
+  color: $grey;
+  .navbar-brand {
+    &:hover {
+      cursor: default;
+    }
+  }
   ul {
     list-style: none;
+    font-weight: bold;
     li {
       display: inline;
       margin-right: 1em;
@@ -35,6 +44,15 @@ body {
         text-decoration: none;
         &:hover {
           color: $pink;
+        }
+      }
+      #nav-divider {
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
+        &:hover {
+          cursor: context-menu;
+          color: $grey;
         }
       }
       #plans {
@@ -46,8 +64,19 @@ body {
   }
 }
 
+.login-moto {
+  margin: 10em auto;
+  @media screen and (max-width: 1023px) {
+    margin: 1em auto;
+  }
+}
+
 .moto {
   margin-top: 6em;
+  @media screen and (max-width: 1023px) {
+    margin: 2em auto;
+    text-align: center;
+  }
 }
 
 .login {
@@ -56,8 +85,23 @@ body {
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
+  border: 1px solid $pink;
   border-radius: 2em;
-  box-shadow: 5px 5px 50px black;
+  box-shadow: 10px 10px 70px black;
+  @media screen and (max-width: 767px) {
+    margin: 3em auto;
+    padding: 2em;
+  }
+  .forgot-password {
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and (max-width: 375px) {
+      display: block;
+      float: none;
+      margin-left: 0.35em;
+    }
+  }
   input {
     background: none;
     border: none;
@@ -80,8 +124,8 @@ body {
   button {
     color: $grey;
     background: $pink;
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
     border: none;
     &:hover {
@@ -89,4 +133,332 @@ body {
       cursor: pointer;
     }
   }
+}
+
+.sharing {
+  background-color: $blue-bg;
+  .sharing-body {
+    padding: 0 15% 0 5%;
+    margin-top: 15em;
+    margin-bottom: 5em;
+    @media screen and (max-width: 1023px) {
+      margin: 3em auto;
+      text-align: center;
+      padding: 0 5em;
+    }
+    @media screen and (max-width: 325px) {
+      margin: 3em auto;
+      text-align: center;
+      padding: 0 2em;
+    }
+  }
+  .img-holder {
+    background: url("../images/sharing-img.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+    box-shadow: inset -50px 0px 70px $blue-bg;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+  p {
+    color: $silver;
+  }
+  h1 {
+    color: $pink;
+  }
+  h2,
+  h4 {
+    color: $purple-light;
+  }
+}
+
+.service {
+  background-color: white;
+  color: $silver;
+  .img-holder {
+    background: url("../images/phone-img.jpeg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    color: $pink;
+    margin-bottom: 1em;
+  }
+  h2,
+  h4 {
+    color: $purple-light;
+    margin-bottom: 1em;
+  }
+  .narrow-text {
+    padding: 0 32%;
+    margin-bottom: 5em;
+    @media screen and (max-width: 325px) {
+      margin: 3em auto;
+      text-align: center;
+      padding: 0 2em;
+    }
+  }
+  p {
+    padding-bottom: 5em;
+  }
+}
+
+.divider {
+  background-color: $purple;
+  padding-bottom: 5em;
+  h1 {
+    color: $pink;
+    margin: 2em 0 1em 0;
+  }
+  h2 {
+    margin-bottom: 2em;
+  }
+  i {
+    color: $pink;
+    margin-left: 1em;
+  }
+  .online {
+    color: $green;
+  }
+  .offline {
+    color: $silver;
+  }
+  .message {
+    background: $grey;
+    color: $purple;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+  }
+  h6 {
+    font-weight: bold;
+  }
+  .filename {
+    background: rgba(232, 88, 137, 0.4);
+    color: $grey;
+    padding: 0.5em;
+    border-radius: 0.5em;
+  }
+  .upload {
+    background-color: $purple;
+    border-radius: 0.5em;
+    padding: 2em 1em;
+    box-shadow: 5px 5px 50px black;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  p {
+    margin-bottom: 2em;
+  }
+}
+
+.customer {
+  background-color: $blue-bg;
+  color: $silver;
+  overflow-x: hidden;
+  .img-holder {
+    background: url("../images/support-img.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50em;
+    box-shadow: inset 50px 0px 70px $blue-bg;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+  .text-body {
+    padding: 15% 5% 0 20%;
+    @media screen and (max-width: 1023px) {
+      margin: 3em auto;
+      text-align: center;
+      padding: 0 2em;
+    }
+  }
+  h1 {
+    color: $pink;
+  }
+  h2 {
+    color: $purple-light;
+  }
+  button {
+    background-color: $green;
+    border: none;
+    border-radius: 0.2em;
+    color: $grey;
+    padding: 1em 2em;
+    @media screen and (max-width: 325px) {
+      margin: 1em auto;
+      padding: 0.5em 1em;
+    }
+    i {
+      margin-left: 1em;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $green-light;
+    }
+  }
+}
+
+.tools {
+  background-color: white;
+  color: $silver;
+  h1 {
+    color: $pink;
+  }
+  h4,
+  h2 {
+    color: $purple-light;
+  }
+}
+
+#divider-img {
+  background: url("../images/form-img.jpg"), $purple;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 5em 5em;
+  button {
+    background-color: $pink;
+    border: none;
+    border-radius: 0.2em;
+    color: $grey;
+    padding: 1em 2em;
+    margin-top: 2em;
+    @media screen and (max-width: 325px) {
+      margin: 2em auto;
+      text-align: center;
+      padding: 0.5em 1em;
+    }
+    i {
+      margin-left: 2em;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $pink-light;
+    }
+  }
+}
+
+.footer {
+  background-color: $blue-bg;
+  color: $silver;
+  margin-bottom: 5em;
+  .col-sm-12 {
+    @media screen and (max-width: 1023px) {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      &:hover {
+        cursor: pointer;
+        color: $pink;
+      }
+    }
+  }
+  h2,
+  h4 {
+    color: $purple-light;
+    font-weight: bold;
+  }
+  h6 {
+    border-top: 2px solid $silver;
+    padding-top: 1em;
+  }
+  button {
+    background-color: $pink;
+    border: none;
+    border-radius: 0.2em;
+    color: $grey;
+    padding: 1em 2em;
+    margin: 2em auto 0.5em auto;
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+      background-color: $pink-light;
+    }
+  }
+  #footer-brand {
+    i {
+      font-size: 1em !important;
+      margin: 0;
+      &:hover {
+        cursor: default;
+        color: $purple-light;
+      }
+    }
+  }
+  i {
+    margin: 0 1em;
+    font-size: 2em;
+    @media screen and (max-width: 430px) {
+      margin: 0em 0.5em;
+      font-size: 1.6em;
+    }
+    &:hover {
+      cursor: pointer;
+      color: $pink;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .credit {
+    color: $silver;
+    &:hover {
+      color: $pink;
+      text-decoration: none;
+    }
+  }
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
 }

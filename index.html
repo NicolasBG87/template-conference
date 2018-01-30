@@ -12,30 +12,47 @@
 </head>
 <body>
   <div class="container mt-5" id="nav">
-    <div class="row">
-      <div class="col-md-4">
-        <h5><i class="fa fa-users"></i> BRAND</h5>
-      </div>
-      <div class="col-md-8">
-        <ul>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">FEATURES</a></li>
-          <li><a href="#">HELP</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li> | </li>
-          <li><a href="#"><strong>LOG IN</strong></a></li>
-          <li><a href="#" id="plans"><strong>PLANS & PRICING</strong></a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-users"></i> BRAND</a>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#services">SERVICES </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#help">HELP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-divider">|</a>
+          </li>
+          <div class="dropdown-divider"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOG IN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="plans">PLANS & PRICING</a>
+          </li>
         </ul>
       </div>
-    </div>
+    </nav>
   </div>
 
-  <div class="container mt-5">
+  <div class="container login-moto">
     <div class="row">
       <div class="moto col-md-12 col-lg-4">
-        <h1 class="mt-5 mb-0">Online conferencing</h1>
-        <h1 class="mt-0">made easy.</h1>
-        <h5 class="mt-4 mb-5"><em>Present. Share. Sell. Support.</em></h5>
+        <h1>Web conference</h1>
+        <h1>made easy.</h1>
+        <h5><em>Present. Share. Sell. Support.</em></h5>
       </div>
       <div class="col-md-12 col-lg-8 login">
         <h1 class="text-center mb-5"><i class="fa fa-users"></i></h1>
@@ -51,15 +68,215 @@
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="check">
             <label class="form-check-label" for="check">Keep me signed in</label>
-            <span class="pull-right forgot-password">Forgot password</span>
+            <span class="pull-right forgot-password">Forgot password?</span>
           </div>
           <div class="text-center">
-            <button class="mt-4" type="submit"><i class="fa fa-arrow-right fa-2x"></i></button>
+            <button class="mt-4" type="submit"><i class="fa fa-sign-in fa-2x"></i></button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
+  <div class="container-fluid sharing">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 img-holder"></div>
+      <div class="col-sm-12 col-md-12 col-lg-6 sharing-body">
+        <h1><i class="fa fa-desktop"></i></h1>
+        <h2>Screen Sharing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In incidunt delectus eos vel corporis neque pariatur at debitis iusto doloribus, eveniet accusantium commodi repellat veniam dolor, totam, eum perferendis architecto.</p>
+        <h4>1-to-Many Screen Sharing</h4>
+        <p>In incidunt delectus eos vel corporis neque pariatur at debitis iusto doloribus, eveniet accusantium commodi repellat veniam dolor.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid service text-center pt-5" id="services">
+    <h1><i class="fa fa-meetup fa-2x"></i></h1>
+    <h2>Conference Meetup Service</h2>
+    <p class="narrow-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae laboriosam, facere distinctio. Earum id fugit modi harum facere. Aliquam dolor, dignissimos ducimus sit sunt delectus quam!</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <h4>Integrated</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus corrupti neque, earum id fugit modi harum facere. Aliquam dolor, dignissimos ducimus sit sunt delectus quam! Qui reiciendis laudantium voluptates.</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <h4>Stand-Alone</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem asperiores dolorem quis neque quo nihil veritatis odio, modi, libero non ea consequuntur aliquid obcaecati nisi architecto doloribus facere molestias consequatur?</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 img-holder"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid divider" id="features">
+    <div class="container">
+      <div class="text-center">
+        <h1><i class="fa fa-comments fa-2x"></i></h1>
+        <h2>Chat and Exchange Files</h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <h2>Send and receive</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, autem mollitia, consectetur nisi temporibus amet deserunt illum unde inventore.</p>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+          <div class="message">
+            <h6><i class="fa fa-circle online"></i> John Doe <span class="pull-right">11:23 AM</span></h6>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae distinctio culpa.</p>
+          </div>
+          <div class="message">
+            <h6><i class="fa fa-circle offline"></i> Sara Okay <span class="pull-right">11:26 AM</span></h6>
+            <p>Lorem ipsum dolor.</p>
+            <div class="container filename">
+              <i class="fa fa-file fa-2x"></i>
+              <span>filename.png</span><span class="pull-right">516.4 KB</span>
+            </div>
+          </div>
+          <div class="message">
+            <h6><i class="fa fa-circle online"></i> John Doe <span class="pull-right">11:38 AM</span></h6>
+            <p>Ok :D</p>
+            <div class="container filename">
+              <i class="fa fa-spinner fa-2x rotating"></i>
+              <span>uploadprogress.png</span><span class="pull-right">516.4 KB</span>
+            </div>
+          </div>
+          <div class="upload">
+            <span>Send message or drop a file...</span><span class="pull-right"><i class="fa fa-comments file-pink"></i> <i class="fa fa-file file-pink"></i></span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 mt-5">
+          <h4><i class="fa fa-weixin"></i> Instant Messaging</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur illum, reprehenderit nobis sint amet quasi quam mollitia eveniet numquam, hic corporis a aperiam.</p>
+          <h4><i class="fa fa-file"></i> File Transfers</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fuild customer" id="help">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 text-body mb-5">
+        <h1><i class="fa fa-user-circle-o"></i></h1>
+        <h2>Exceptional Customer Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In incidunt delectus eos vel corporis neque pariatur at debitis iusto doloribus, eveniet accusantium commodi repellat veniam dolor, totam, eum perferendis architecto.</p>
+        <button>Need help? <strong>Let's Chat!</strong> <i class="fa fa-arrow-right"></i></button>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-6 img-holder">
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid tools">
+    <div class="container pt-5 pb-5 text-center">
+      <h2 class="mb-5">Meeting tools:</h2>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-external-link"></i></h1>
+          <h4>Cross-browser Support</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-envelope"></i></h1>
+          <h4>Outlook Integration</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-tachometer"></i></h1>
+          <h4>Leader Controls</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-comments"></i></h1>
+          <h4>Custom Greetings</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-globe"></i></h1>
+          <h4>Worldwide Access</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-sitemap"></i></h1>
+          <h4>Real-time Network</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-line-chart"></i></h1>
+          <h4>Analytics</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-thumbs-up"></i></h1>
+          <h4>Administration</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h1><i class="fa fa-question"></i></h1>
+          <h4>Top Customer Service</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur reprehenderit qui recusandae fugiat neque culpa hic voluptate sed, ipsam ex perferendis minus maxime laborum. Nostrum suscipit asperiores repellendus consequuntur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center" id="divider-img">
+    <h2>Meet, Present & Share Simply</h2>
+    <h6>Setup in seconds. No credit card required. Cancel anytime. <strong>14 days free trial!</strong></h6>
+    <button><strong>Sign Up</strong><i class="fa fa-arrow-right"></i></button>
+  </div>
+
+  <div class="container-fluid footer pt-5 pb-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h2 id="footer-brand"><i class="fa fa-users"></i> BRAND</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci pariatur architecto.</p>
+          <p>US & CAN: +1-888-123-456</p>
+          <p>Worldwide: +1-424-123-456</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h4>LEARN MORE</h4>
+          <ul>
+            <li>How it works?</li>
+            <li>Meeting Tools</li>
+            <li>Pricing</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+            <li>Outlook Plugin</li>
+            <li>Phone Controls</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h4>ABOUT US</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+          <button>Try it Free</button>
+          <p>or <a href="#">Login Now</a></p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-linkedin"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-twitter"></i>
+        </div>
+      </div>
+      <h6 class="mt-2 mb-2">All rights Reserved. Your Company 2018.</h6>
+      <h6>&copy; 2018 by <a href="https://nicolasbg87.github.io/" class="credit"><strong>Nikola Bojanovic</strong></a></h6>
+    </div>
+  </div>
+  
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
