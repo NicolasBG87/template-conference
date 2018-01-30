@@ -1,7 +1,8 @@
+// Fonts
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 $primary-font: 'Open Sans', sans-serif;
 
-
+// Colors
 $purple: #423b88;
 $purple-light: #565194;
 $pink: #e85889;
@@ -13,18 +14,17 @@ $blue: #28b6f8;
 $blue-bg: #f1f6fa;
 $silver: #c2c2c2;
 
-
+// Global
 * {
   font-family: $primary-font;
   outline: 0;
   user-select: none;
 }
-
 body {
   background: $purple;
   color: $grey;
 }
-
+// Navbar
 #nav {
   background: $purple;
   color: $grey;
@@ -63,14 +63,13 @@ body {
     }
   }
 }
-
+// Login form
 .login-moto {
   margin: 10em auto;
   @media screen and (max-width: 1023px) {
     margin: 1em auto;
   }
 }
-
 .moto {
   margin-top: 6em;
   @media screen and (max-width: 1023px) {
@@ -78,7 +77,6 @@ body {
     text-align: center;
   }
 }
-
 .login {
   padding: 3em 10em;
   background: url("../images/form-img.jpg"), $purple;
@@ -134,7 +132,7 @@ body {
     }
   }
 }
-
+// Screen sharing
 .sharing {
   background-color: $blue-bg;
   .sharing-body {
@@ -174,7 +172,7 @@ body {
     color: $purple-light;
   }
 }
-
+// Meetup services
 .service {
   background-color: white;
   color: $silver;
@@ -206,7 +204,7 @@ body {
     padding-bottom: 5em;
   }
 }
-
+// Chat and exchange files
 .divider {
   background-color: $purple;
   padding-bottom: 5em;
@@ -257,7 +255,7 @@ body {
     margin-bottom: 2em;
   }
 }
-
+// Customer support
 .customer {
   background-color: $blue-bg;
   color: $silver;
@@ -306,7 +304,7 @@ body {
     }
   }
 }
-
+// Meetup tools
 .tools {
   background-color: white;
   color: $silver;
@@ -318,7 +316,7 @@ body {
     color: $purple-light;
   }
 }
-
+// Sign up call to action
 #divider-img {
   background: url("../images/form-img.jpg"), $purple;
   background-position: center;
@@ -346,7 +344,7 @@ body {
     }
   }
 }
-
+// Footer
 .footer {
   background-color: $blue-bg;
   color: $silver;
@@ -423,7 +421,7 @@ body {
     }
   }
 }
-
+// Progress icon rotate animation (inside of chat and exchange files)
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -436,7 +434,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -453,7 +450,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 .rotating {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
